@@ -1,0 +1,64 @@
+@use '../../../../../assets/styles/variables' as variables;
+
+
+:host {
+  display: block;
+}
+
+.search {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__title{
+    font-size: 2.8rem;
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid variables.color(gray-1);;
+    border-radius: 4px;
+  }
+  
+  &__citieslist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  &__cityitem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid variables.color(white-2);;
+    &--info {
+      display: flex;
+      flex-direction: column;
+    }
+    &--btn {
+      display: flex;
+      align-self: center;
+    }
+    &--text {
+      color: #8750F7;
+    }
+  }  
+  &__noresults{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: variables.color(white-3);;
+    border-radius: 4px;
+    text-align: center;
+    color: variables.color(gray-1);
+  }
+}
+
+.loading {
+  font-size: 2rem;
+  text-align: center;
+  color: variables.color(blue-2);
+  margin-top: 20px;
+}

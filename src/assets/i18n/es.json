@@ -1,0 +1,56 @@
+{
+    "NAVBAR": {
+        "MENU": {
+            "item1": "Buscar",
+            "item2": "Historial",
+            "item3": "Favoritos"
+        }
+    },
+    "FOOTER":{
+        "text-1": "Todos los derechos reservados",
+        "text-2": "- Ing. Luis Andrés Macea"
+    },
+    "WEATHER": {
+        "FORM": {
+            "title": "Buscar ciudades",
+            "input_placeholder": "Nombre de la ciudad",
+            "loading_text": "Buscando..."
+        },
+        "text_not_found": "No se encontraron ciudades con ese nombre"
+    },
+    "SEARCH": {
+        "INFO": {
+            "subtitle": "Viento",
+            "item1": "Velocidad",
+            "item2": "Humedad",
+            "item3": "Hora local"
+        },
+        "button_back": "Volver"
+    },
+    "HISTORY/FAVORITES": {
+        "title_history": "Busquedas recientes",
+        "title_favorites": "Listado de favoritos",
+        "TABLE": {
+            "column1": "Ciudad",
+            "column2": "Temperatura",
+            "column3": "Hora local",
+            "column4": "País",
+            "column5": "Acciones",
+            "pagination": {
+                "button_prev": "Anterior",
+                "button_next": "Siguiente",
+                "description1": "Página",
+                "description2": "de"
+            }
+        },
+        "no_results": "No se han realizado busquedas aun",
+        "no_favorites": "No se han agregado favoritos aun",
+        "favorite_add": "Favorito agregado!",
+        "favorite_deleted": "Favorito borrado!"
+    },
+    "NOT_FOUND_COMPONENT": {
+        "page": "Página no encontrada",
+        "to_home": "Volver al inicio"
+    }
+    
+}

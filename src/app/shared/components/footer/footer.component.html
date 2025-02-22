@@ -1,0 +1,18 @@
+<footer class="footer">
+  <ul class="footer__list">
+    <li>
+      <a class="footer__itemlist" routerLink="weather/search" >{{"NAVBAR.MENU.item1" | translate}}</a>
+    </li>
+    <li>
+      <a class="footer__itemlist" routerLink="weather/history" >{{"NAVBAR.MENU.item2" | translate}}</a>
+    </li>
+    <li class="footer__itemlist">
+      <a class="footer__itemlist" routerLink="weather/favorites" >{{"NAVBAR.MENU.item3" | translate}}</a>
+    </li>
+    
+  </ul>
+  <div class="footer__containercopytext">
+    <p class="footer__copytext">© {{ currentYear }} {{"FOOTER.text-1" | translate}}</p>
+    <p class="footer__owner">{{"FOOTER.text-2" | translate}}</p>
+  </div>
+</footer>

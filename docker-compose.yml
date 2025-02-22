@@ -1,0 +1,16 @@
+services:
+  weatherapp:
+    image: andresmac318/weatherapp-test
+    container_name: weatherapp-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      API_URL: ${API_URL}
+      API_KEY: ${API_KEY}
+    command: npm run start -- --host 0.0.0.0

@@ -1,0 +1,49 @@
+@use '../../../../assets/styles/mixins' as mixins;
+
+:host {
+  display: block;
+}
+
+.notfound {
+  min-width: 280px;
+  max-width: 400px;
+  margin: 100px 5px;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__errorcode {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #f44336;
+    margin: 0;
+  }
+
+  &__errormessage {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #757575;
+  }
+
+  &__homelink {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+@include mixins.mobile(){
+  .notfound {
+    min-width: 280px;
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+  }
+}

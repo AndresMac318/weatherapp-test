@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "assets/styles/root.scss";
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2a1454;        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8750f7;    
+    border: 3px solid #2a1454; 
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+ }
+
+::-webkit-scrollbar-thumb{
+    background: #8750f7;
+    border-radius: 10px;
+    cursor: default;
+}

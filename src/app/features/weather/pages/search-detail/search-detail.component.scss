@@ -1,0 +1,133 @@
+@use '../../../../../assets/styles/mixins' as mixins;
+@use '../../../../../assets/styles/variables' as variables;
+
+:host {
+  display: block;
+}
+
+.searchdetail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    padding: 30px 20px 70px;
+  }
+
+  &__btnprev {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 0 10px;
+}
+&__btn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+    height: 56px;
+    width: 144px;
+    padding: 8px 10px;
+    margin-right: 60px;
+    border-radius: 36px;
+    background: transparent;
+    color: variables.color(purple-2);
+    border: none;
+    transition: background 0.4s;
+    a {
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: sans-serif;
+        line-height: 15px;
+        letter-spacing: 1px;
+        color: variables.color(purple-2);
+    }
+    &:hover {
+        color: variables.color(white-1);
+        font-weight: 600;
+        background: variables.color(purple-2);
+        cursor: pointer;
+
+        a {
+            color: variables.color(white-1);
+        }
+        
+        svg {
+            path {
+                fill: variables.color(white-1);
+            }
+        }
+    }
+}
+  &__title {
+    color: variables.color(purple-2);;
+    font-size: 3.4rem;
+  }
+  &__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 20px;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+  }
+  &__info{
+    background: rgb(62 52 189 / 55%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(171, 52, 189, 0.28);
+    padding: 30px;
+    width: 200px;
+  }
+  &__temperature {
+    font-size: 3rem;
+    color: variables.color(white-1);
+    margin: 6px;
+    width: 100%;
+  }
+  &__additional{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 10px;
+
+  }
+  &__additionaltext {
+    font-size: 2rem;
+    color: variables.color(gray-1);
+  }
+  &__state {
+    color: variables.color(purple-2);
+    font-size: 3.4rem;
+  }
+}
+
+@include mixins.tablet(){
+  .searchdetail {
+    &__container{
+      padding: 50px;
+    }
+    &__content {
+      flex-direction: row;
+    }
+  }
+}
+
+@include mixins.desktop(){
+  .searchdetail {
+    &__container{
+      padding: 50px 100px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@use '../../../../../assets/styles/mixins' as mixins;
+@use '../../../../../assets/styles/variables' as variables;
+
+:host {
+  display: block;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 30px;
+  @include mixins.desktop(){
+    margin: 30px 10vw;
+  }
+}
+
+.table-title {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+
+table {
+  width: 100%;
+  max-width: 1240px;
+  border-collapse: collapse;
+  text-align: left;
+
+  th, td {
+    padding: 8px 12px;
+    border-bottom: 1px solid variables.color(white-2);
+  }
+
+  th {
+    background-color: variables.color(white-2);
+  }
+}
+
+.button {
+  padding: 4px 8px;
+  border: none;
+  background-color: variables.color(blue-2);
+  color: variables.color(white-1);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.color(blue-3);
+  }
+
+  &:disabled {
+    background-color: variables.color(white-3);;
+    cursor: not-allowed;
+  }
+}
+
+.buttonlove{
+    padding: 4px 8px;
+    border: none;
+    background-color: transparent;
+    color: variables.color(white-1);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2.3rem;
+  
+}
+
+.isfavoritemsg {
+  text-align: center;
+  padding: 10px;
+  background: variables.color(blue-1);
+  width: 182px;
+  margin: 10px auto;
+  border-radius: 8px;
+  color: variables.color(white-1);
+  font-weight: 600;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.pagination button {
+  padding: 4px 8px;
+  border: none;
+  background-color: variables.color(blue-2);
+  color: variables.color(white-1);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.color(blue-3);
+  }
+
+  &:disabled {
+    background-color: variables.color(white-3);
+    cursor: not-allowed;
+  }
+}
+
+.noresults {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: variables.color(white-3);
+  border-radius: 4px;
+  text-align: center;
+  color: variables.color(gray-1);
+}

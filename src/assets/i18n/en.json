@@ -1,0 +1,56 @@
+{
+    "NAVBAR": {
+        "MENU": {
+            "item1": "Search",
+            "item2": "History",
+            "item3": "Favorites"
+        }
+    },
+    "FOOTER":{
+        "text-1": "All Rights Reserved",
+        "text-2": "by Eng. Luis Andrés Macea"
+    },
+    "WEATHER": {
+        "FORM": {
+            "title": "Search cities",
+            "input_placeholder": "City name",
+            "loading_text": "Searching..."
+        },
+        "text_not_found": "There was not found cities with this name"
+    },
+    "SEARCH": {
+        "INFO": {
+            "subtitle": "Wind",
+            "item1": "Velocity",
+            "item2": "Humidity",
+            "item3": "Local time"
+        },
+        "button_back": "Back"
+    },
+    "HISTORY/FAVORITES": {
+        "title_history": "Recents searchs",
+        "title_favorites": "Favorites list",
+        "TABLE": {
+            "column1": "City",
+            "column2": "Temperature",
+            "column3": "Local time",
+            "column4": "Country",
+            "column5": "Actions",
+            "pagination": {
+                "button_prev": "Prev",
+                "button_next": "Next",
+                "description1": "Page",
+                "description2": "of"
+            }
+        },
+        "no_results": "There are not been make searchs yet",
+        "no_favorites": "There are not been added favorites yet",
+        "favorite_add": "Favorite added!",
+        "favorite_deleted": "Favorite deleted!"
+    },
+    "NOT_FOUND_COMPONENT": {
+        "page": "Page not found",
+        "to_home": "Back to home"
+    }
+
+}
