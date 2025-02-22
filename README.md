@@ -4,9 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Have node v18 or higher previously installed.
+
 Run command `npm install` in project root. Wait modules instalation.
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run start` for a dev server on project root folder. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Development Server With Docker Compose
 
